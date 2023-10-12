@@ -88,11 +88,13 @@ python setup.py sdist bdist_wheel && twine upload dist/*
 ## TODO
 
 ```shell
-python -m smi_python_runner.main -p profile1,profile2 -c ./test/resources -o ./test/resources/cli/optional.yaml -r tbi-runner -s sub-x -t ./test/resources/tbi-376bdfaa-1195-11ee-be56-0242ac120002.yaml
-```
-
-```python
-# from smi_python_tbi_parser.tbi import parse_tbi
-# '--smi-tbi-file', './test/resources/tbi-376bdfaa-1195-11ee-be56-0242ac120002.yaml',
-# arguments_register_service.register(Argument('smi-tbi-file', 't', parse_tbi, 'TBI yaml to be used', True), )
+export RUNNERS_PREFIX=smi_python_tbi_runner
+python \
+    -m smi_python_runner.main \
+    -p profile1,profile2  \
+    -c ./test/resources \
+    -o ./test/resources/cli/optional.yaml \
+    -r tbi-runner \
+    -s sub-x \
+    -t ./test/resources/tbi-376bdfaa-1195-11ee-be56-0242ac120002.yaml
 ```

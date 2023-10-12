@@ -7,11 +7,8 @@ log = logging.getLogger(__name__)
 
 logging.info("Loaded module")
 
-'''
-For probing set up: export RUNNERS_PREFIX=smi_python_tbi_runner
-'''
 
-
+# For probing set up: export RUNNERS_PREFIX=smi_python_tbi_runner
 class RunnerTbiSubX:
 
     def __init__(self):
