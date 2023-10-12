@@ -1,0 +1,6 @@
+application:
+    name: "smi_python_tbi_runner"
+name: Something
+a:
+    b:
+        c: and more
