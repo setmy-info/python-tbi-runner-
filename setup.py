@@ -14,6 +14,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "smi-python-commons==0.3.3",
-        "smi-python-runner==1.2.0"
+        "smi-python-runner==1.3.0"
     ],
 )
